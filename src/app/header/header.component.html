@@ -1,0 +1,27 @@
+<div class="header">
+  <div class="left-content">
+    <p class="title-text">Irina Yankovskaya</p>
+    <p class="front">Angular Web Developer</p>
+  </div>
+  <button
+    mat-icon-button 
+    class="menu-btn"
+    aria-label="Example icon-button with a menu"
+    [matMenuTriggerFor]="menu">
+    <mat-icon>more_vert</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>
+      <mat-icon>contacts</mat-icon>
+      <span>Contacts</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>assignment</mat-icon>
+      <span>Technologies</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>invert_colors</mat-icon>
+      <span>Toggle theme</span>
+    </button>
+  </mat-menu>
+</div>

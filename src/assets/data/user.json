@@ -1,0 +1,67 @@
+[
+    {
+        "title": "Languages",
+        "skills": [
+            { "skill": "JavaScript", "level": 7 },
+            { "skill": "TypeScript", "level": 7 },
+            { "skill": "HTML5", "level": 9 },
+            { "skill": "CSS3", "level": 8 }           
+        ]
+    },
+    {   
+        "title": "Frameworks",
+        "skills": [
+            { "skill": "Angular", "level": 6 },
+            { "skill": "RxJS", "level": 5 },
+            { "skill": "NgRx/Store", "level": 5 }
+        ]
+    },
+    {
+        "title": "UI Frameworks",
+        "skills": [
+            { "skill": "Angular Material 2", "level": 5 }
+        ]
+    },
+    {
+        "title": "Testing",
+        "skills": [
+            { "skill": "Jasmine", "level": 5 },
+            { "skill": "Karma", "level": 5 },
+            { "skill": "Protractor", "level": 5 }
+        ]
+    },
+    {
+        "title": "Development Tools",
+        "skills": [
+            { "skill": "Angular CLI", "level": 7 },
+            { "skill": "Npm", "level": 7 },
+            { "skill": "Git", "level": 6 },
+            { "skill": "SASS", "level": 9 },
+            { "skill": "SCSS", "level": 9 }
+        ]
+    },
+    {
+        "title": "Operating systems",
+        "skills": [
+            { "skill": "Windows", "level": 10 },
+            { "skill": "Ubuntu", "level": 9 },
+            { "skill": "MacOS", "level": 9 }
+        ]
+    },
+    {
+        "title": "Graphics Editors",
+        "skills": [
+            { "skill": "Adobe Photoshop", "level": 7 },
+            { "skill": "Adobe Illustrator", "level": 7 }
+        ]
+    },
+    {
+        "title": "Speaking languages",
+        "skills": [
+            { "skill": "English", "level": 8 },
+            { "skill": "German", "level": 3 },
+            { "skill": "Ukrainian", "level": 10 },
+            { "skill": "Russian", "level": 10 }
+        ]
+    }
+]

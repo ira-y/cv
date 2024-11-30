@@ -1,0 +1,66 @@
+.header {
+  background-color: rgb(8, 131, 188);
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px grey;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  padding-top: 20px;
+}
+
+.left-content {
+  display: flex;
+  align-items: center; 
+}
+
+.title-text {
+  color: white;
+  font-size: 30px;
+  font-weight: 500;
+  margin-right: 15px;
+  margin-left: 20px;
+}
+
+.front {
+  color: white;
+  font-size: 20px;
+}
+
+button {
+  background: transparent;
+  border: none;
+}
+
+.menu-btn { 
+  margin-right: 10px;
+  padding-bottom: 38px;
+}
+
+mat-icon {
+  color: white;
+}
+
+@media all and (max-width: 575px) {
+  .front {
+    font-size: 15px;
+    margin-left: 8px;
+  }
+
+  .title-text {
+    font-size: 25px;
+    padding-left: 10px;
+  }
+}
+
+@media all and (max-width: 375px) {
+  .front {
+    font-size: 13px;
+    margin-left: 5px;
+  }
+
+  .title-text {
+    font-size: 20px;
+    padding-left: 10px;
+  }
+}
