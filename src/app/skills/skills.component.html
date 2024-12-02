@@ -1,5 +1,5 @@
   <app-skill
-    *ngFor="let section of userData"
+    *ngFor="let section of userData; trackBy: trackByIndex"
     [title]="section.title"
-    [skills]="section.skills"
-  ></app-skill>
+    [skills]="section.skills">
+  </app-skill>

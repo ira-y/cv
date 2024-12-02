@@ -33,57 +33,32 @@ p {
 }
 
 .first, .second, .third, .fourth {
-  display: inline-flex;
-  gap: 10px; 
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 a {
   color: rgb(0, 0, 0);
   font-size: 20px;
-  text-decoration: none; 
+  text-decoration: none;
 }
 
-@media all and (min-width: 0) and (max-width: 1240px) {
+@media all and (min-width: 0) and (max-width: 470px) {
 
   mat-card-content {
     display: flex;
     flex-direction: column;
-    gap: 15px; 
+    gap: 15px;
   }
 
   .first, .second, .third, .fourth {
     width: 100%;
-    padding-left: 45px;
+    padding-left: 16px;
   }
 
   p, a {
-    font-size: 19px; 
-    word-wrap: break-word;
-    max-width: 100%;
-  }
-
-  .blueText {
-    color: rgb(8, 131, 188);
-    font-weight: 500;
-    font-size: 19px;
-  }
-}
-
-@media all and (min-width: 0) and (max-width: 475px) {
-
-  mat-card-content {
-    display: flex;
-    flex-direction: column;
-    gap: 15px; 
-  }
-
-  .first, .second, .third, .fourth {
-    width: 100%;
-    padding-left: 10px;
-  }
-
-  p, a {
-    font-size: 16px; 
+    font-size: 16px;
     word-wrap: break-word;
     max-width: 100%;
   }
@@ -96,5 +71,6 @@ a {
 
   mat-card-title {
     margin-bottom: 0px;
+    font-size: 22px;
   }
 }

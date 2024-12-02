@@ -11,4 +11,12 @@ export class SkillComponent {
   @Input() title!: string;
   @Input() skills!: ISkill[];
   
+  trackByIndex (index: number): number {
+    return index;
+   } 
+
+  trackBySkillIndex (index: number): number {
+   return index;
+  } 
+
 }

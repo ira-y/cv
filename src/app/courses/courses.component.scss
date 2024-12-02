@@ -45,14 +45,14 @@ mat-card-title {
 }
 
 
-@media all and (min-width: 0) and (max-width: 530px) {
+ @media all and (min-width: 0) and (max-width: 470px) {
   .blueText {
     color: rgb(8, 131, 188);
     font-weight:500;
     margin-right: 5px;
-    font-size: 19px;
+    font-size: 16px;
   }
-  
+
   mat-card-title {
     font-weight: 500;
     color: rgb(8, 131, 188);
@@ -60,7 +60,7 @@ mat-card-title {
     margin-bottom: 35px;
     margin-top: 35px;
   }
-  
+
   mat-card {
     margin-top: 20px;
     box-shadow: 0 0 10px rgb(130, 130, 130);
@@ -71,7 +71,8 @@ mat-card-title {
   mat-card-content {
     display: flex;
     flex-direction: column;
-    font-size: 17px;
+    font-size: 16px;
     gap: 25px;
   }
+
 }
