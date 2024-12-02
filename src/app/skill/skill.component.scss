@@ -46,9 +46,40 @@ mat-card-title {
   display: inline-flex;
 }
 
+@media all and (min-width: 0) and (max-width: 401px) {
+  .circle-levl {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: #8c9eff;
+    margin-right: 7px;
+  }
+  
+  mat-card-content {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    gap: 15px;
+  }
 
+  .blueText {
+    font-size: 14px; 
+    word-wrap: break-word;
+    max-width: 100%;
+    width: 90px;
+  }
 
-@media all and (min-width: 0) and (max-width: 470px) {
+  mat-card-title {
+  font-weight: 500;
+  color: rgb(8, 131, 188);
+  font-size: 20px;
+  margin-bottom: 35px;
+  margin-top: 35px;
+}
+}
+
+@media all and (min-width: 401px) and (max-width: 470px) {
   .circle-levl {
     display: inline-block;
     width: 15px;
@@ -89,35 +120,3 @@ mat-card-title {
   }
 }
 
-@media all and (min-width: 0) and (max-width: 400px) {
-  .circle-levl {
-    display: inline-block;
-    width: 13px;
-    height: 13px;
-    border-radius: 50%;
-    background-color: #8c9eff;
-    margin-right: 7px;
-  }
-  
-  mat-card-content {
-    display: flex;
-    flex-direction: column;
-    font-size: 20px;
-    gap: 15px;
-  }
-
-  .blueText {
-    font-size: 14px; 
-    word-wrap: break-word;
-    max-width: 100%;
-    width: 90px;
-  }
-
-  mat-card-title {
-  font-weight: 500;
-  color: rgb(8, 131, 188);
-  font-size: 20px;
-  margin-bottom: 35px;
-  margin-top: 35px;
-}
-}
