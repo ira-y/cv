@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
+import { ThemeService } from '../services/theme.service';
 
 @Component({
     selector: 'app-header',
@@ -7,5 +8,25 @@ import { Component } from '@angular/core';
     standalone: false
 })
 export class HeaderComponent {
+    @Output() isDarkThemeSend = new EventEmitter<boolean>();
+    @Output() toggleSidenav = new EventEmitter<void>();
+    @Output() openTechnologies = new EventEmitter<void>();
+  
+    isDarkTheme: boolean = false;
 
+    constructor(private themeService: ThemeService) {}
+
+    onToggleSidenavContacts(): void {
+        this.toggleSidenav.emit(); 
+      }
+    
+      onToggleSidenavTechnologies(): void {
+        this.openTechnologies.emit(); 
+      }
+
+    toggleTheme() {
+        this.isDarkTheme = !this.isDarkTheme;
+        this.themeService.toggleTheme(this.isDarkTheme);
+        this.isDarkThemeSend.emit(this.isDarkTheme);
+    }
 }

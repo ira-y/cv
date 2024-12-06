@@ -1,7 +1,61 @@
-<app-header></app-header>
-<div class="container">
-  <app-summary></app-summary>
-  <app-skills></app-skills>
-  <app-courses></app-courses>
-  <app-contacts></app-contacts>
-</div>
+<app-header 
+(toggleSidenav)="onToggleSidenavContacts()" 
+(openTechnologies)="onToggleSidenavTechnologies()"
+></app-header>
+<mat-sidenav-container>
+  <mat-sidenav 
+    mode="over" 
+    position="end" 
+    [(opened)]="isSidenavOpen" 
+    (closed)="closeSidenav()"
+    class="menu">
+    <mat-tab-group [(selectedIndex)]="activeTabIndex">
+      <mat-tab label="Contacts" class="block">
+        <p class="title" [class.dark-theme-blue-text]="darkTheme">Contacts</p>
+        <div class="text">
+          <div class="first">
+            <p class="blueText" [class.dark-theme-blue-text]="darkTheme"> Email: </p>
+            <p>irina.yankovskaya07&#64;gmail.com </p>
+          </div>
+
+          <div class="second">
+            <p class="blueText" [class.dark-theme-blue-text]="darkTheme"> LinkedIn: </p>
+            <a href="https://www.linkedin.com/in/irina-yankovskaya-a72a4b261"
+            class="textInfo"
+              target="_blank"
+              [class.dark-theme-a]="darkTheme">
+              Irina Yankovskaya</a>
+          </div>
+
+          <div class="third">
+            <p class="blueText" [class.dark-theme-blue-text]="darkTheme"> Skype: </p>
+            <p>ira.od</p>
+          </div>
+
+          <div class="fourth">
+            <p class="blueText" [class.dark-theme-blue-text]="darkTheme"> Address: </p>
+            <p>Ventspils, Latvia</p>
+          </div>
+          <button class="btn" (click)="closeSidenav()">Close</button>
+        </div>
+      </mat-tab>
+      <mat-tab class="technologies-mat-tab" label="Technologies">
+        <p class="title" [class.dark-theme-blue-text]="darkTheme">Technologies used for this site</p>
+        <p class="info">Angular</p>
+        <p class="info">TypeScript</p>
+        <p class="info">Angular Material 3</p>
+        <p class="info">HTML 5</p>
+        <p class="info">CSS 3</p>
+        <button class="btn" (click)="closeSidenav()">Close</button>
+      </mat-tab>
+    </mat-tab-group>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div class="container">
+      <app-summary></app-summary>
+      <app-skills></app-skills>
+      <app-courses></app-courses>
+      <app-contacts></app-contacts>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

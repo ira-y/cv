@@ -11,17 +11,16 @@
     <mat-icon>more_vert</mat-icon>
   </button>
   <mat-menu #menu="matMenu">
-    <button mat-menu-item>
-      <mat-icon>contacts</mat-icon>
-      <span>Contacts</span>
-    </button>
-    <button mat-menu-item>
-      <mat-icon>assignment</mat-icon>
-      <span>Technologies</span>
-    </button>
-    <button mat-menu-item>
-      <mat-icon>invert_colors</mat-icon>
-      <span>Toggle theme</span>
-    </button>
-  </mat-menu>
-</div>
+  <button mat-menu-item (click)="onToggleSidenavContacts()">
+    <mat-icon>contacts</mat-icon>
+    <span>Contacts</span>
+  </button>
+  <button mat-menu-item (click)="onToggleSidenavTechnologies()">
+    <mat-icon>assignment</mat-icon>
+    <span>Technologies</span>
+  </button>
+  <button mat-menu-item (click)="toggleTheme()">
+    <mat-icon>invert_colors</mat-icon>
+    <span>Toggle theme</span>
+  </button>
+</mat-menu>

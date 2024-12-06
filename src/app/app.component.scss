@@ -6,3 +6,102 @@
   padding: 0 20px;
   padding-bottom: 30px;
 }
+
+.menu {
+  width: 320px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  color: rgb(8, 131, 188);
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.btn {
+  display: flex; 
+  justify-content: center; 
+  margin: 20px auto; 
+  align-items: center;
+  background-color: rgb(230, 230, 230);
+  border: 0px;
+  width: 35%;
+  height: 30px;
+  border-radius: 7px;
+  color: rgb(37, 37, 37);
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+  box-shadow:  3px 3px 3px rgba(119, 119, 119, 0.397);
+  border: 0.1px solid rgb(194, 194, 194);
+}
+
+.btn:hover {
+  background-color: rgb(209, 209, 209); 
+}
+
+.blueText {
+  color: rgb(8, 131, 188);
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.text {
+  text-align: center;
+  font-size: 15px;
+}
+
+.first, .second, .third, .fourth {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-left: 10px;
+}
+
+a {
+  color: rgb(53, 53, 53);
+  font-size: 15px;
+  text-decoration: none;
+}
+
+// .mat-mdc-tab-group.mat-mdc-tab-group-stretch-tabs>.mat-mdc-tab-header .mat-mdc-tab {
+//   width: 160px;
+// }
+
+.info {
+  margin-left: 10px;
+  font-size: 15px;
+}
+
+.dark-theme-blue-text {
+  color: rgb(45, 169, 208);
+}
+
+.dark-theme-a {
+  color: rgb(255, 255, 255);
+}
+
+.mat-drawer.mat-drawer-end {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.mat-mdc-tab-body-content {
+  height: 400px;
+  background-color: red;
+}
+
+.technologies-mat-tab {
+  width: 160px;
+}
+
+.contacts-mat-tab {
+  width: 160px;
+}
+
+::ng-deep {
+  .mat-mdc-tab-body-wrapper {
+    height: 310px !important;
+  }
+}

@@ -14,6 +14,8 @@ import { ToArrayPipe } from './shared/pipes/to-array.pipe';
 import { SkillComponent } from './skill/skill.component';
 import { SkillsComponent } from './skills/skills.component';
 import { SummaryComponent } from './summary/summary.component';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatTabsModule } from '@angular/material/tabs';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { SummaryComponent } from './summary/summary.component';
     MatCardModule,
     MatButtonModule,
     MatMenuModule,
-    MatIconModule
+    MatIconModule,
+    MatSidenavModule,
+    MatTabsModule
   ],
   providers: [
     provideAnimationsAsync()
