@@ -12,8 +12,8 @@
   >
     <mat-tab-group [(selectedIndex)]="activeTabIndex">
       <mat-tab label="Contacts" class="block">
-        <p class="title" [class.dark-theme-blue-text]="darkTheme">Contacts</p>
-        <div class="text">
+        <div class="text" *ngIf="activeTabIndex === 0">
+          <p class="title" [class.dark-theme-blue-text]="darkTheme">Contacts</p>
           <div class="first">
             <p class="blueText" [class.dark-theme-blue-text]="darkTheme"> Email: </p>
             <p>irina.yankovskaya07&#64;gmail.com </p>
@@ -42,13 +42,15 @@
         </div>
       </mat-tab>
       <mat-tab class="technologies-mat-tab" label="Technologies">
-        <p class="title" [class.dark-theme-blue-text]="darkTheme">Technologies used for this site</p>
-        <p class="info">Angular</p>
-        <p class="info">TypeScript</p>
-        <p class="info">Angular Material 3</p>
-        <p class="info">HTML 5</p>
-        <p class="info">CSS 3</p>
-        <button class="btn" (click)="closeSidenav()">Close</button>
+        <div *ngIf="activeTabIndex === 1">
+          <p class="title" [class.dark-theme-blue-text]="darkTheme">Technologies used for this site</p>
+          <p class="info">Angular</p>
+          <p class="info">TypeScript</p>
+          <p class="info">Angular Material 3</p>
+          <p class="info">HTML 5</p>
+          <p class="info">CSS 3</p>
+          <button class="btn" (click)="closeSidenav()">Close</button>
+        </div>
       </mat-tab>
     </mat-tab-group>
   </mat-sidenav>
