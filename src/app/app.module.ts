@@ -1,20 +1,21 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
-import {MatIconModule} from '@angular/material/icon';
-import {MatMenuModule} from '@angular/material/menu';
-import {MatButtonModule} from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatMenuModule } from '@angular/material/menu';
+import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-import { HeaderComponent } from './header/header.component';
-import { SummaryComponent } from './summary/summary.component';
+import { AppComponent } from './app.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { CoursesComponent } from './courses/courses.component';
-import { SkillsComponent } from './skills/skills.component';
-import { SkillComponent } from './skill/skill.component';
+import { HeaderComponent } from './header/header.component';
 import { ToArrayPipe } from './shared/pipes/to-array.pipe';
+import { SkillComponent } from './skill/skill.component';
+import { SkillsComponent } from './skills/skills.component';
+import { SummaryComponent } from './summary/summary.component';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatTabsModule } from '@angular/material/tabs';
 
 @NgModule({
   declarations: [
@@ -29,11 +30,12 @@ import { ToArrayPipe } from './shared/pipes/to-array.pipe';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    MatCardModule, 
+    MatCardModule,
     MatButtonModule,
-    MatMenuModule, 
-    MatIconModule
+    MatMenuModule,
+    MatIconModule,
+    MatSidenavModule,
+    MatTabsModule
   ],
   providers: [
     provideAnimationsAsync()

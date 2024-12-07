@@ -1,13 +1,14 @@
-<mat-card>
+<mat-card [class.dark-theme-color-mat-card]="darkTheme">
   <mat-card-header>
-    <mat-card-title>{{title}}</mat-card-title>
+    <mat-card-title [class.dark-theme-color-blue-text]="darkTheme">{{title}}</mat-card-title>
   </mat-card-header>
   <mat-card-content>
-      <div *ngFor="let item of skills" class="first">
-        <p class="blueText"> {{item.skill}} </p>
-          <div *ngFor="let item of item.level | toArray">
-            <span class="circle-levl"></span>
-          </div>
-      </div> 
+    <div *ngFor="let item of skills; trackBy: trackByIndex" class="first">
+      <p class="blueText" [class.dark-theme-color]="darkTheme"> {{item.skill}} </p>
+        <div *ngFor="let item of item.level | toArray; trackBy: trackByIndex">
+          {{item}}
+          <span class="circle-levl"></span>
+        </div>
+    </div>
   </mat-card-content>
 </mat-card>

@@ -12,7 +12,7 @@
 mat-card {
   display: flex;
   flex-direction: row;
-  margin-top: 30px;
+  margin-top: 20px;
   box-shadow: 0 0 10px rgb(130, 130, 130);
 }
 
@@ -22,63 +22,16 @@ mat-card {
 }
 
 .title {
-  margin-bottom: 20px;
   margin-top: 25px;
   font-weight: 500;
   font-size: 23px;
 }
 
 p {
-  font-size: 17px;
+  font-size: 16px;
 }
 
-@media all and (min-width: 0) and (max-width: 750px) {
-  p {
-    font-size: 15px;
-  }
-  
-  .picture {
-    border-radius: 100%;
-    width: 140px;
-    height: 140px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 15px;
-    margin-bottom: 10px;
-  }
-  
-  .title {
-    margin-bottom: 15px;
-    margin-top: 5px;
-    font-weight: 500;
-    font-size: 23px;
-  }
-}
-
-@media all and (min-width: 0) and (max-width: 420px) {
-  p {
-    font-size: 13px;
-  }
-
-  .picture {
-    border-radius: 100%;
-    width: 130px;
-    height: 130px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 50px;
-    margin-bottom: 10px;
-  }
-
-  .title {
-    margin-bottom: 15px;
-    margin-top: 5px;
-    font-weight: 500;
-    font-size: 21px;
-  }
-}
-
-@media all and (min-width: 0) and (max-width: 380px) {
+@media all and (min-width: 0) and (max-width: 401px) {
   p {
     font-size: 13px;
   }
@@ -89,14 +42,47 @@ p {
     height: 130px;
     margin-left: 10px;
     margin-right: 5px;
-    margin-top: 50px;
     margin-bottom: 10px;
   }
 
   .title {
-    margin-bottom: 5px;
     margin-top: 3px;
     font-weight: 500;
-    font-size: 23px;
+    font-size: 21px;
+  }
+
+  mat-card-header {
+    height: 30px;
   }
 }
+
+.dark-theme-color-mat-card {
+  box-shadow: 0 0 10px rgb(31, 31, 31);
+}
+
+@media all and (min-width: 401px) and (max-width: 470px) {
+  p {
+    font-size: 13px;
+  }
+
+  .picture {
+    border-radius: 100%;
+    width: 130px;
+    height: 130px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+
+  .title {
+    margin-bottom: 15px;
+    margin-top: 5px;
+    font-weight: 500;
+    font-size: 21px;
+  }
+
+  mat-card-header {
+    height: 33px;
+  }
+}
+

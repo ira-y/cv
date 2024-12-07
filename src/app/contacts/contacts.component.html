@@ -1,23 +1,27 @@
-<mat-card>
+<mat-card [class.dark-theme-color-mat-card]="darkTheme">
   <mat-card-header>
-    <mat-card-title>Contacts</mat-card-title>
+    <mat-card-title [class.dark-theme-color-blue-text]="darkTheme">Contacts</mat-card-title>
   </mat-card-header>
   <mat-card-content>
     <div class="first">
-      <p class="blueText"> Email: </p>
+      <p class="blueText" [class.dark-theme-color-blue-text]="darkTheme"> Email: </p>
       <p>irina.yankovskaya07&#64;gmail.com </p>
     </div>
     <div class="second">
-      <p class="blueText"> LinkedIn: </p>
-      <a href="https://www.linkedin.com/in/irina-yankovskaya-a72a4b261" class="textInfo" target="_blank">Irina Yankovskaya</a>
+      <p class="blueText" [class.dark-theme-color-blue-text]="darkTheme" > LinkedIn: </p>
+      <a href="https://www.linkedin.com/in/irina-yankovskaya-a72a4b261"
+       class="textInfo"
+        target="_blank"
+        [class.dark-theme-color]="darkTheme">
+        Irina Yankovskaya</a>
     </div>
     <div class="third">
-      <p class="blueText"> Skype: </p>
+      <p class="blueText" [class.dark-theme-color-blue-text]="darkTheme"> Skype: </p>
       <p>ira.od</p>
     </div>
     <div class="fourth">
-      <p class="blueText"> Address: </p>
-      <p>Odessa, Ukraine</p>
+      <p class="blueText" [class.dark-theme-color-blue-text]="darkTheme"> Address: </p>
+      <p>Ventspils, Latvia</p>
     </div>
   </mat-card-content>
 </mat-card>
