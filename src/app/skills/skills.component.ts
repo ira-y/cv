@@ -11,5 +11,5 @@ export class SkillsComponent {
 
   trackByIndex (index: number): number {
     return index;
-   } 
+  } 
 }
