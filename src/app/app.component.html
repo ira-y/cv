@@ -1,14 +1,15 @@
 <app-header 
-(toggleSidenav)="onToggleSidenavContacts()" 
-(openTechnologies)="onToggleSidenavTechnologies()"
+  (toggleSidenav)="onToggleSidenavContacts()" 
+  (openTechnologies)="onToggleSidenavTechnologies()"
 ></app-header>
 <mat-sidenav-container>
   <mat-sidenav 
     mode="over" 
     position="end" 
+    class="menu"
     [(opened)]="isSidenavOpen" 
     (closed)="closeSidenav()"
-    class="menu">
+  >
     <mat-tab-group [(selectedIndex)]="activeTabIndex">
       <mat-tab label="Contacts" class="block">
         <p class="title" [class.dark-theme-blue-text]="darkTheme">Contacts</p>
@@ -20,11 +21,12 @@
 
           <div class="second">
             <p class="blueText" [class.dark-theme-blue-text]="darkTheme"> LinkedIn: </p>
-            <a href="https://www.linkedin.com/in/irina-yankovskaya-a72a4b261"
-            class="textInfo"
+            <a 
+              href="https://www.linkedin.com/in/irina-yankovskaya-a72a4b261"
+              class="textInfo"
               target="_blank"
-              [class.dark-theme-a]="darkTheme">
-              Irina Yankovskaya</a>
+              [class.dark-theme-a]="darkTheme"
+            >Irina Yankovskaya</a>
           </div>
 
           <div class="third">

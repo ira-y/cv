@@ -1,41 +1,41 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ThemeService } from './services/theme.service';
 
 @Component({
-    selector: 'app-root',
-    templateUrl: './app.component.html',
-    styleUrl: './app.component.scss',
-    standalone: false
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.scss',
+  standalone: false
 })
-export class AppComponent {
-    isSidenavOpen = false;
-    activeTabIndex = 0; 
-    darkTheme: boolean = false;
-  
-    constructor(private isDarkTheme: ThemeService) {}
+export class AppComponent implements OnInit {
+  isSidenavOpen = false;
+  activeTabIndex = 0;
+  darkTheme = false;
 
-    ngOnInit(): void {
-        this.setTheme();
-      }
+  constructor(private isDarkTheme: ThemeService) { }
 
-    setTheme(): void {
-        this.isDarkTheme.currentTheme$.subscribe(value => {
-            this.darkTheme = value;
-        })
-    }
+  ngOnInit() {
+    this.setTheme();
+  }
 
-    onToggleSidenavContacts(): void {
-      this.isSidenavOpen = true; 
-      this.activeTabIndex = 0; 
-    }
-  
-    onToggleSidenavTechnologies(): void {
-      this.isSidenavOpen = true; 
-      this.activeTabIndex = 1;   
-    }
-  
-    closeSidenav(): void {
-      this.isSidenavOpen = false; 
-    }
+  setTheme(): void {
+    this.isDarkTheme.currentTheme$.subscribe(value => {
+      this.darkTheme = value;
+    })
+  }
+
+  onToggleSidenavContacts(): void {
+    this.isSidenavOpen = true;
+    this.activeTabIndex = 0;
+  }
+
+  onToggleSidenavTechnologies(): void {
+    this.isSidenavOpen = true;
+    this.activeTabIndex = 1;
+  }
+
+  closeSidenav(): void {
+    this.isSidenavOpen = false;
+  }
 
 } 
