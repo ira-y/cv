@@ -25,12 +25,12 @@
   justify-content: center; 
   margin: 20px auto; 
   align-items: center;
-  background-color: rgb(230, 230, 230);
+  background-color: #1E90FF;
   border: 0px;
-  width: 35%;
+  width: 30%;
   height: 30px;
-  border-radius: 7px;
-  color: rgb(37, 37, 37);
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
   transition: background-color 0.3s ease;
   font-size: 16px;
   box-shadow:  3px 3px 3px rgba(119, 119, 119, 0.397);
@@ -38,7 +38,17 @@
 }
 
 .btn:hover {
-  background-color: rgb(209, 209, 209); 
+  background-color: #0D5BB2;
+}
+
+.dark-theme-btn {
+  background-color: #0D5BB2;
+  border: 0px solid rgb(194, 194, 194);
+  box-shadow:  3px 3px 3px rgb(56, 56, 56);
+}
+
+.dark-theme-btn:hover {
+  background-color: #0068d05b;
 }
 
 .blueText {
